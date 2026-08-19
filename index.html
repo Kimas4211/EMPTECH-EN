@@ -8,6 +8,7 @@
 
 <title>EMPTECH | Digital Solutions Library</title>
 
+
 <style>
 
 *{
@@ -77,6 +78,7 @@ body{
 
 
 
+
 /* Content */
 
 
@@ -114,6 +116,7 @@ body{
 
 
 
+
 /* Cards */
 
 
@@ -129,6 +132,10 @@ body{
 
 .card{
 
+    position:relative;
+
+    overflow:hidden;
+
     background:white;
 
     border-radius:15px;
@@ -136,6 +143,7 @@ body{
     padding:30px;
 
     min-height:240px;
+
 
     display:flex;
 
@@ -147,9 +155,6 @@ body{
     border:1px solid #e5e5e5;
 
 
-    transition:.25s;
-
-
     text-decoration:none;
 
     color:inherit;
@@ -157,18 +162,118 @@ body{
 
     cursor:pointer;
 
+
+    transition:all .35s ease;
+
+}
+
+
+
+.card::before{
+
+    content:"VIEW";
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+
+    transform:translate(-50%,-50%) scale(.8);
+
+
+    font-size:38px;
+
+    font-weight:bold;
+
+
+    letter-spacing:5px;
+
+
+    color:white;
+
+
+    opacity:0;
+
+
+    transition:.35s ease;
+
+
 }
 
 
 
 .card:hover{
 
-    transform:translateY(-5px);
 
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    background:#f28c00;
+
+
+    transform:translateY(-8px);
+
+
+    box-shadow:0 18px 45px rgba(0,0,0,.15);
+
 
 }
 
+
+
+.card:hover::before{
+
+
+    opacity:.95;
+
+
+    transform:translate(-50%,-50%) scale(1);
+
+
+}
+
+
+
+.card:hover h3,
+
+.card:hover p,
+
+.card:hover .number{
+
+
+    color:white;
+
+
+}
+
+
+
+/* Mobile click effect */
+
+
+.card:active{
+
+
+    background:#f28c00;
+
+
+    transform:scale(.98);
+
+
+}
+
+
+
+.card:active h3,
+
+.card:active p,
+
+.card:active .number{
+
+
+    color:white;
+
+
+}
 
 
 .number{
@@ -178,6 +283,8 @@ body{
     letter-spacing:2px;
 
     color:#aaa;
+
+    transition:.35s;
 
 }
 
@@ -191,6 +298,9 @@ body{
 
     margin:20px 0 10px;
 
+
+    transition:.35s;
+
 }
 
 
@@ -203,7 +313,11 @@ body{
 
     line-height:1.6;
 
+
+    transition:.35s;
+
 }
+
 
 
 
@@ -226,6 +340,7 @@ footer{
 
 
 
+
 /* Responsive */
 
 
@@ -238,6 +353,7 @@ footer{
 }
 
 }
+
 
 
 
@@ -258,8 +374,6 @@ footer{
 
 
 }
-
-
 
 </style>
 
@@ -346,10 +460,13 @@ Access EMPTECH documents and technical materials.
 
 
 
+
 <!-- 01 -->
 
 <a class="card"
+
 href="BioTabPro.pdf"
+
 target="_blank">
 
 
@@ -394,7 +511,9 @@ Compact Multimodal Biometric Tablet for Field Enrollment
 
 
 <a class="card"
+
 href="Company Brief.pdf"
+
 target="_blank">
 
 
@@ -435,12 +554,13 @@ Trusted Identity Products and Solutions Provider
 
 
 
-
 <!-- 03 -->
 
 
 <a class="card"
+
 href="Trusted Identity Ecosystem.pdf"
+
 target="_blank">
 
 
@@ -481,12 +601,13 @@ Innovation-driven Multimodal Biometric Solutions for Enrollment & Authentication
 
 
 
-
 <!-- 04 -->
 
 
 <a class="card"
+
 href="MLPMiniCard_Datasheet.pdf"
+
 target="_blank">
 
 
@@ -527,12 +648,13 @@ Ultra-Compact Desktop Personalization Solution for Decentralized Card Issuance
 
 
 
-
 <!-- 05 -->
 
 
 <a class="card"
+
 href="Self-service Dispensing Solutions.pdf"
+
 target="_blank">
 
 
@@ -573,12 +695,13 @@ ID Documents | Card & Booklet
 
 
 
-
 <!-- 06 -->
 
 
 <a class="card"
+
 href="ID cards personalization solutions.pdf"
+
 target="_blank">
 
 
@@ -617,10 +740,12 @@ Centralized & Decentralized Personalization Solutions
 
 
 
+
 </div>
 
 
 </main>
+
 
 
 
@@ -633,6 +758,8 @@ Centralized & Decentralized Personalization Solutions
 
 
 </footer>
+
+
 
 
 
