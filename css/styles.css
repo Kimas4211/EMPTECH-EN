@@ -1,0 +1,217 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#00a3ff;
+  --muted:rgba(255,255,255,0.6);
+  --glass: rgba(255,255,255,0.04);
+  --radius:12px;
+  --container:1100px;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:var(--font-sans);
+  color:#e6eef8;
+  background: linear-gradient(180deg,#071021 0%, #071a2a 60%);
+  -webkit-font-smoothing:antialiased;
+  line-height:1.45;
+}
+
+/* layout container */
+.container{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:2rem;
+}
+
+/* Header */
+.site-header{
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:80;
+  transition:backdrop-filter .25s ease, background-color .25s ease, box-shadow .25s ease;
+  background: linear-gradient(180deg, rgba(7,16,33,0.6), rgba(7,16,33,0.35));
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255,255,255,0.02);
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+}
+.logo img{height:36px}
+.main-nav{flex:1}
+.main-nav ul{
+  display:flex;
+  list-style:none;
+  gap:1rem;
+  margin:0;
+  padding:0;
+  align-items:center;
+}
+.main-nav a{
+  color:var(--muted);
+  text-decoration:none;
+  padding:0.5rem 0.75rem;
+  border-radius:8px;
+  font-weight:600;
+  transition:color .2s ease, background .18s ease;
+}
+.main-nav a:hover{color:#fff; background:rgba(255,255,255,0.02)}
+.cta .btn{margin-left:auto}
+.nav-toggle{
+  display:none;
+  background:none;
+  border:0;
+  color:var(--muted);
+  font-size:20px;
+}
+
+/* Hero */
+.hero{
+  padding-top:110px; /* header space */
+  padding-bottom:90px;
+  min-height:72vh;
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+}
+.hero-inner{
+  display:flex;
+  gap:3rem;
+  align-items:center;
+}
+.hero-content{flex:1;max-width:640px}
+.hero h1{
+  font-size:38px;
+  margin:0 0 1rem;
+  letter-spacing:-0.4px;
+  color: #eaf6ff;
+}
+.lead{color:var(--muted); font-size:1.05rem}
+.hero-ctas{margin-top:1.5rem; display:flex; gap:1rem}
+
+/* Buttons */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:.6rem;
+  padding:.75rem 1.15rem;
+  border-radius:10px;
+  cursor:pointer;
+  text-decoration:none;
+  font-weight:700;
+  transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+.btn-primary{
+  background: linear-gradient(90deg,var(--accent), #0070c8);
+  color:#071021;
+  box-shadow: 0 6px 20px rgba(0,163,255,0.18);
+}
+.btn-primary:hover{
+  transform:translateY(-4px);
+  box-shadow: 0 14px 40px rgba(0,163,255,0.22);
+}
+.btn-ghost{
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.06);
+  color:var(--muted);
+}
+
+/* Hero visual */
+.hero-visual{width:480px;max-width:40%}
+.device-mockup{
+  background: linear-gradient(135deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:18px;
+  padding:6px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+  overflow:hidden;
+  transform:translateY(0);
+  transition:transform .35s ease, box-shadow .35s ease;
+}
+.device-mockup img{width:100%; display:block; height:320px; object-fit:cover}
+.device-mockup:hover{transform:translateY(-6px); box-shadow: 0 26px 60px rgba(2,6,23,0.75)}
+
+/* Sections */
+.section{padding:80px 0; position:relative}
+.section h2{font-size:24px; margin:0 0 0.5rem}
+.section-lead{color:var(--muted); margin-bottom:1.25rem}
+
+/* Solutions */
+.solutions-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:1rem;
+}
+.solution-card{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding:1.35rem;
+  border-radius:12px;
+  transition:transform .22s ease, box-shadow .22s ease;
+  border:1px solid rgba(255,255,255,0.03);
+}
+.solution-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 18px 40px rgba(2,6,23,0.65);
+}
+
+/* Products */
+.products-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:1rem;
+}
+.product-card{
+  background:var(--card);
+  border-radius:12px;
+  overflow:hidden;
+  transition:transform .22s ease, box-shadow .22s ease;
+  border:1px solid rgba(255,255,255,0.03);
+}
+.product-card img{width:100%; height:180px; object-fit:cover; display:block}
+.product-card h4{margin:14px 16px 6px}
+.product-card p{margin:0 16px 18px; color:var(--muted); font-size:0.95rem}
+.product-card:hover{transform:translateY(-10px); box-shadow:0 28px 60px rgba(1,8,20,0.7)}
+
+/* News */
+.news-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:16px}
+.news-card{background:var(--glass); padding:1rem; border-radius:10px; border:1px solid rgba(255,255,255,0.03)}
+.news-card .muted{color:var(--muted); font-size:0.9rem}
+
+/* About stats */
+.about-stats{display:flex; gap:2rem; margin-top:1rem}
+.about-stats div{background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:12px 18px; border-radius:10px; text-align:center}
+.about-stats strong{display:block; font-size:20px; color:#fff}
+
+/* Contact form */
+.contact-form{max-width:760px; background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:1rem; border-radius:12px; border:1px solid rgba(255,255,255,0.03)}
+.form-row{display:flex; gap:12px}
+.form-row input{flex:1; padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff}
+textarea{width:100%; padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff;margin-top:12px}
+.form-actions{display:flex; gap:10px; margin-top:12px}
+
+/* Footer */
+.site-footer{padding:36px 0 80px; border-top:1px solid rgba(255,255,255,0.02)}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+.footer-left img{height:28px}
+.footer-right nav a{color:var(--muted); text-decoration:none; margin-left:14px}
+
+/* Responsive */
+@media (max-width:1000px){
+  .hero-inner{flex-direction:column-reverse}
+  .hero-visual{width:100%}
+  .main-nav ul{display:none}
+  .nav-toggle{display:block}
+  .container{padding:1.25rem}
+  .solutions-grid, .products-grid{grid-template-columns:1fr}
+  .news-grid{grid-template-columns:1fr}
+  .about-stats{flex-direction:column}
+}

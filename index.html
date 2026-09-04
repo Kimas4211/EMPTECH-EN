@@ -1,665 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>EMPTECH | Digital Solutions Library</title>
-
-<style>
-
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
-
-
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f5f6f8;
-    color:#161616;
-}
-
-
-
-/* Header */
-
-.hero{
-
-    background:#10131c;
-    color:white;
-    padding:70px 8%;
-
-}
-
-
-.hero-content{
-
-    max-width:1200px;
-    margin:auto;
-
-}
-
-
-.brand{
-
-    font-size:15px;
-    letter-spacing:4px;
-    font-weight:bold;
-    color:#f28c00;
-    margin-bottom:25px;
-
-}
-
-
-.hero h1{
-
-    font-size:48px;
-    line-height:1.15;
-    margin-bottom:20px;
-
-}
-
-
-.hero p{
-
-    max-width:720px;
-    color:#c7c7c7;
-    font-size:17px;
-    line-height:1.7;
-
-}
-
-
-
-
-/* Content */
-
-
-.container{
-
-    max-width:1200px;
-    margin:auto;
-    padding:65px 30px 90px;
-
-}
-
-
-
-.section-title{
-
-    margin-bottom:35px;
-
-}
-
-
-.section-title h2{
-
-    font-size:30px;
-    margin-bottom:10px;
-
-}
-
-
-.section-title p{
-
-    color:#777;
-    font-size:15px;
-
-}
-
-
-
-
-/* Cards */
-
-
-.grid{
-
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-
-}
-
-
-
-.card{
-
-    background:white;
-
-    border-radius:15px;
-
-    padding:30px;
-
-    min-height:240px;
-
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:space-between;
-
-
-    border:1px solid #e5e5e5;
-
-
-    text-decoration:none;
-
-    color:inherit;
-
-
-    cursor:pointer;
-
-
-    transition:all .35s ease;
-
-}
-
-
-
-.card:hover{
-
-    background:#f28c00;
-
-    transform:translateY(-8px);
-
-    box-shadow:0 18px 45px rgba(0,0,0,.15);
-
-}
-
-
-
-.card:hover h3,
-
-.card:hover p,
-
-.card:hover .number{
-
-    color:white;
-
-}
-
-
-
-.card:active{
-
-    background:#f28c00;
-
-    transform:scale(.98);
-
-}
-
-
-
-.card:active h3,
-
-.card:active p,
-
-.card:active .number{
-
-    color:white;
-
-}
-
-
-
-.number{
-
-    font-size:12px;
-
-    letter-spacing:2px;
-
-    color:#aaa;
-
-    transition:.35s;
-
-}
-
-
-
-.card h3{
-
-    font-size:22px;
-
-    line-height:1.3;
-
-    margin:20px 0 10px;
-
-    transition:.35s;
-
-}
-
-
-
-.card p{
-
-    font-size:14px;
-
-    color:#777;
-
-    line-height:1.6;
-
-    transition:.35s;
-
-}/* Footer */
-
-
-footer{
-
-    background:#10131c;
-
-    color:#777;
-
-    padding:30px;
-
-    text-align:center;
-
-    font-size:13px;
-
-}
-
-
-
-/* Responsive */
-
-
-@media(max-width:900px){
-
-.grid{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-}
-
-
-
-@media(max-width:600px){
-
-.grid{
-
-    grid-template-columns:1fr;
-
-}
-
-
-.hero h1{
-
-    font-size:34px;
-
-}
-
-
-}
-
-
-</style>
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EMPTECH — Trusted Identity & Border Solutions</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="https://via.placeholder.com/32x32.png?text=E" />
 </head>
-
-
-
 <body>
-
-
-
-<section class="hero">
-
-
-<div class="hero-content">
-
-
-<div class="brand">
-
-EMPTECH
-
-</div>
-
-
-
-<h1>
-
-Explore More About EMPTECH
-
-</h1>
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<main class="container">
-
-
-
-<div class="section-title">
-
-
-<h2>
-
-Products & Solutions
-
-</h2>
-
-
-</div>
-
-
-
-
-
-<div class="grid">
-
-
-
-
-
-<!-- 01 -->
-
-<a class="card"
-
-href="BioTabPro.pdf"
-
-target="_blank">
-
-
-<div>
-
-
-<div class="number">
-
-01
-
-</div>
-
-
-
-<h3>
-
-BioTabPro
-
-</h3>
-
-
-
-<p>
-
-Compact Multimodal Biometric Tablet for Field Enrollment
-
-</p>
-
-
-</div>
-
-
-</a>
-
-
-
-
-
-
-
-<!-- 02 -->
-
-<a class="card"
-
-href="Company Brief.pdf"
-
-target="_blank">
-
-
-<div>
-
-
-<div class="number">
-
-02
-
-</div>
-
-
-
-<h3>
-
-Company Brief
-
-</h3>
-
-
-
-<p>
-
-Trusted Identity Products and Solutions Provider
-
-</p>
-
-
-</div>
-
-
-</a>
-
-
-
-
-
-
-
-<!-- 03 -->
-
-<a class="card"
-
-href="Trusted Identity Ecosystem.pdf"
-
-target="_blank">
-
-
-<div>
-
-
-<div class="number">
-
-03
-
-</div>
-
-
-
-<h3>
-
-Trusted Identity Ecosystem
-
-</h3>
-
-
-
-<p>
-
-Innovation-driven Multimodal Biometric Solutions for Enrollment & Authentication
-
-</p>
-
-
-</div>
-
-
-</a>
-
-
-
-
-
-
-
-<!-- 04 -->
-
-<a class="card"
-
-href="MLPMiniCard_Datasheet.pdf"
-
-target="_blank">
-
-
-<div>
-
-
-<div class="number">
-
-04
-
-</div>
-
-
-
-<h3>
-
-MLP MiniCard_Datasheet
-
-</h3>
-
-
-
-<p>
-
-Ultra-Compact Desktop Personalization Solution for Decentralized Card Issuance
-
-</p>
-
-
-</div>
-
-
-</a>
-
-
-
-
-
-
-
-<!-- 05 -->
-
-<a class="card"
-
-href="Self-service Dispensing Solutions.pdf"
-
-target="_blank">
-
-
-<div>
-
-
-<div class="number">
-
-05
-
-</div>
-
-
-
-<h3>
-
-Self-service Dispensing Solutions
-
-</h3>
-
-
-
-<p>
-
-ID Documents | Card & Booklet
-
-</p>
-
-
-</div>
-
-
-</a>
-
-
-
-
-
-
-
-<!-- 06 -->
-
-<a class="card"
-
-href="ID cards personalization solutions.pdf"
-
-target="_blank">
-
-
-<div>
-
-
-<div class="number">
-
-06
-
-</div>
-
-
-
-<h3>
-
-ID cards personalization solutions
-
-</h3>
-
-
-
-<p>
-
-Centralized & Decentralized Personalization Solutions
-
-</p>
-
-
-</div>
-
-
-</a>
-
-
-
-
-
-
-</div>
-
-
-</main>
-
-
-
-
-
-
-<footer>
-
-© 2026 EMPTECH. All Rights Reserved.
-
-</footer>
-
-
-
-
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="https://via.placeholder.com/160x36?text=EMPTECH" alt="EMPTECH Logo">
+      </div>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#solutions" data-target="solutions">Solutions</a></li>
+          <li><a href="#products" data-target="products">Products</a></li>
+          <li><a href="#about" data-target="about">About</a></li>
+          <li><a href="#news" data-target="news">News</a></li>
+          <li><a href="#contact" data-target="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cta">
+        <a class="btn btn-primary" href="#contact">Contact Us</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Turning Trusted Identity into Trusted Services</h1>
+          <p class="lead">EMPTECH provides biometric, secure travel document and border control solutions at global scale — enabling trusted identity for people and services.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary btn-cta" href="#contact">Get in Touch</a>
+            <a class="btn btn-ghost" href="#solutions">Discover Solutions</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="device-mockup">
+            <img src="https://images.unsplash.com/photo-1526378725787-6f6f2e35f1e9?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="">
+            <div class="overlay-lines"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section solutions" id="solutions">
+      <div class="container">
+        <h2>Solutions</h2>
+        <p class="section-lead">Solutions that connect identity and essential services — from secure document issuance to automated border management and digital identity.</p>
+
+        <div class="solutions-grid">
+          <article class="solution-card">
+            <h3>Physical Credentials</h3>
+            <p>End-to-end passport, national ID and secure document issuance with biometric enrollment and personalization.</p>
+            <a class="card-link" href="#contact">Discover More</a>
+          </article>
+
+          <article class="solution-card">
+            <h3>Border Management</h3>
+            <p>AI-assisted travel document analysis and multimodal biometric verification for fast, secure throughput.</p>
+            <a class="card-link" href="#contact">Discover More</a>
+          </article>
+
+          <article class="solution-card">
+            <h3>Digital Identity <span class="muted">(IDaaS)</span></h3>
+            <p>Secure digital identity lifecycle management and authentication services for governments and enterprises.</p>
+            <a class="card-link" href="#contact">Discover More</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products" id="products">
+      <div class="container">
+        <h2>Products</h2>
+        <p class="section-lead">Modular products designed for secure personalization, biometric capture and automated inspection.</p>
+
+        <div class="products-grid">
+          <div class="product-card">
+            <img src="https://via.placeholder.com/560x320.png?text=Smart+Terminal" alt="Smart Terminal">
+            <h4>Smart Terminal</h4>
+            <p>Robust biometric enrollment and automated identity verification terminals.</p>
+          </div>
+
+          <div class="product-card">
+            <img src="https://via.placeholder.com/560x320.png?text=Personalization+System" alt="Personalization System">
+            <h4>Personalization System</h4>
+            <p>High-throughput secure printing, laser engraving and secure chip encoding.</p>
+          </div>
+
+          <div class="product-card">
+            <img src="https://via.placeholder.com/560x320.png?text=Border+Control+AI" alt="Border Control AI">
+            <h4>Border Control AI</h4>
+            <p>AI-driven document analysis and multimodal biometric recognition for checkpoints.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <h2>About EMPTECH</h2>
+        <p class="section-lead">Trusted Identity, Proven at Global Scale. Serving governments, financial institutions and enterprises with secure identity solutions and biometric services.</p>
+        <div class="about-stats">
+          <div><strong>1M+</strong><span>Smart Terminals</span></div>
+          <div><strong>2B+</strong><span>Customized Documents</span></div>
+          <div><strong>60+</strong><span>Countries Served</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section news" id="news">
+      <div class="container">
+        <h2>News</h2>
+        <div class="news-grid">
+          <article class="news-card">
+            <h4>EMPTECH expands biometric services to new regions</h4>
+            <p class="muted">August 2026 • Press Release</p>
+            <p>We opened new enrollment centers and strengthened cross-border verification workflows with partners.</p>
+          </article>
+
+          <article class="news-card">
+            <h4>New border AI reduces dwell time by 30%</h4>
+            <p class="muted">May 2026 • Case Study</p>
+            <p>Independent trials showed significant improvements in throughput using automated document analysis.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="section-lead">Discuss your next identity project with EMPTECH.</p>
+
+        <form class="contact-form" id="contact-form" action="#" onsubmit="return false;">
+          <div class="form-row">
+            <input type="text" id="name" placeholder="Your name" required>
+            <input type="email" id="email" placeholder="Email" required>
+          </div>
+          <textarea id="message" placeholder="Tell us about your project" rows="5" required></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <a class="btn btn-ghost" href="mailto:info@emptech.example">Email Us</a>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <img src="https://via.placeholder.com/120x28?text=EMPTECH" alt="EMPTECH">
+          <p class="muted">© EMPTECH — Trusted Identity Solutions</p>
+        </div>
+        <div class="footer-right">
+          <nav>
+            <a href="#privacy">Privacy</a>
+            <a href="#legal">Legal</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
 </body>
-
-
 </html>
